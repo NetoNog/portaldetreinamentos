@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamnetos - TREINAKI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="app-name">TREINAKI</div>
+    <input type="text" id="search-input" placeholder="Buscar vídeos...">
+  </div>
+
+  <div class="video-container">
+    <!-- Popup Modal para exibir o vídeo -->
+    <div id="video-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <video id="video-player" width="560" height="315" controls>
+          <source id="video-source" src="" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+    </div>
+
+    <!-- Área onde as miniaturas serão exibidas -->
+    <div id="thumbnails" class="thumbnails">
+      <!-- Miniaturas dos vídeos serão carregadas aqui -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
